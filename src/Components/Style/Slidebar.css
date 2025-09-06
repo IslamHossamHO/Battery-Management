@@ -1,0 +1,54 @@
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(16,22,36,0.85) 0%, rgba(16,22,36,0.6) 100%), var(--bg-elev);
+  color: var(--text);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(6px);
+}
+
+@media (max-width: 900px) {
+  .sidebar { width: 220px; }
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  letter-spacing: 0.2px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+  color: var(--muted);
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.15s ease;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  background: rgba(34, 197, 94, 0.12);
+  color: var(--text);
+}
+
+.menu-item.active {
+  background: rgba(34, 197, 94, 0.18);
+  color: var(--text);
+  outline: 1px solid rgba(34,197,94,0.35);
+}

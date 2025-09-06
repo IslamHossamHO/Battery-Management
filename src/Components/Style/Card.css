@@ -1,0 +1,18 @@
+.CardBg {
+  background: var(--panel);
+  padding: 18px 20px;
+  min-width: 280px;
+  border-radius: var(--radius);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.CardBg:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.55);
+}
