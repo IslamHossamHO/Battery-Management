@@ -12,7 +12,9 @@ export default function App() {
         <SlideBar />
         <div className="app-content">
           <Routes>
+            <Route path="/" element={<Dashboard />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="*" element={<div>Still in development</div>} />
           </Routes>
         </div>
       </div>
